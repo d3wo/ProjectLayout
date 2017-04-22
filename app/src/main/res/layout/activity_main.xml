@@ -10,25 +10,33 @@
         android:layout_width="wrap_content"
         android:layout_height="232dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/hypebeast" />
+        android:src="@drawable/hypebeast"
+        android:id="@+id/imageView"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="HYPEBEAST"
-        tools:layout_editor_absoluteY="247dp"
-        tools:layout_editor_absoluteX="16dp"
         android:textSize="40dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:id="@+id/textView4"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
 
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Urban Wear"
-        tools:layout_editor_absoluteY="295dp"
-        tools:layout_editor_absoluteX="16dp"
-        android:textSize="20dp"/>
+        android:textSize="20dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        android:id="@+id/textView5"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -38,7 +46,10 @@
         android:textSize="16dp"
         android:layout_marginTop="8dp"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        android:id="@+id/textView2" />
+        android:id="@+id/textView2"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
 
     <TextView
         android:layout_width="wrap_content"
@@ -48,6 +59,9 @@
         android:textSize="16dp"
         android:layout_marginTop="8dp"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+
         android:id="@+id/textView3" />
 
 
@@ -55,12 +69,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="is the leading online destination for men's contemporary fashion and streetwear. Shop at our store and also enjoy the best in daily editorial content."
-        tools:layout_editor_absoluteY="338dp"
         android:textSize="16dp"
         android:id="@+id/textView"
         android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -69,7 +84,10 @@
         tools:layout_editor_absoluteX="16dp"
         android:textSize="16dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
 
 
 </android.support.constraint.ConstraintLayout>
